@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="25dp">
+
+    <ImageView
+        android:id="@+id/theater_poster"
+        android:layout_width="170dp"
+        android:layout_height="115dp"
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/theater_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marvel"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/theater_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marvel City, Surabaya"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

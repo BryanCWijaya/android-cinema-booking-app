@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bioskop</string>
+    <string name="tanggal_rilis">Tanggal Rilis:</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="genre">Genre:</string>
+    <string name="durasi">Durasi:</string>
+    <string name="produser">Produser:</string>
+    <string name="rating">Rating:</string>
+    <string name="ringkasan">Ringkasan</string>
+    <string name="connection_error">Connection Error!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

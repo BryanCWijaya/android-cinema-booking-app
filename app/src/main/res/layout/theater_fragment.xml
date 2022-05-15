@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".theater.TheaterFragment">
+
+    <data>
+
+        <variable
+            name="theaterVM"
+            type="com.example.bioskop.theater.TheaterViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/connection_error"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/theater_image"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:contentDescription="@string/movie_poster"
+            android:scaleType="fitCenter"
+            app:theater_image="@{theaterVM.imageURL}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{theaterVM.theaterName}"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{theaterVM.location}"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nowPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+</layout>
